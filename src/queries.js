@@ -9,3 +9,11 @@ export const HOME_PAGE = gql`
     }
   }
 `;
+
+export const MOVIE_DETAIL = gql`
+  query movieDetail($movieId: Int!) {
+    movie(id: $movieId) {
+      description_intro
+    }
+  }
+`;
